@@ -10,7 +10,7 @@ int main()
     double sumador = 0.0;
     double aux=0.0;
 
-    while (abs(pi-3.141592)>0.0000001)
+    do
     {
         // sumador = contador%2== 0 ? sumador + (1/(1+2*contador)): sumador - (1/(1+2*contador));
         if (contador % 2 == 0)
@@ -25,7 +25,7 @@ int main()
         contador++;
         aux ++;
         
-    }
+    }while (abs(pi-3.141592)>0.00000001);
     cout <<setprecision(8)<< pi ;
     return 0;
 }
